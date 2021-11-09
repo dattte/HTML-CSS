@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./table-form.css">
+</head>
+<body>
+    <form>
+        <h1>Đăng ký thành viên</h1>
+        <table border="1" cellspacing="3"cellpadding="11">
+            <tr>
+                <th>Nội dung</th>
+                <th>Giá trị</th>
+            </tr>
+            <tr>
+                <td>Họ tên</td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="text" name="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td>
+                    <input type="password" name="password" id="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Avatar:</td>
+                <td>
+                    <input type="file" name="avatar" id="avatar" accept="image/png">
+                </td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td>
+                    <input type="number" name="telephone" id="telephone" maxlength="11">
+                </td>
+            </tr>
+            <tr>
+                <td>Tuổi:</td>
+                <td>
+                    <select name="age" id="age">
+                        <datalist id="age">
+                            <option value="12Tuoi">1 Tuổi</option>
+                            <option value="13Tuoi">13 Tuổi</option>
+                            <option value="14Tuoi">14 Tuổi</option>
+                            <option value="15Tuoi">15 Tuổi</option>
+                            <option value="16Tuoi">16 Tuổi</option>
+                            <option value="17Tuoi">17 Tuổi</option>
+                            <option value="18Tuoi">18 Tuổi</option>
+                        </datalist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <div>
+                        <input type="radio" name="nam" id="man">
+                        <label for="man">Nam</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="nu" id="female" checked>
+                        <label for="female">Nữ</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <div>
+                        <input type="checkbox" name="football" id="football" multiple checked>
+                        <label for="football">Đá bóng</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="badminton" id="badminton" multiple checked>
+                        <label for="badminton">Cầu lông</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="boatrace" id="boatrace" multiple checked>
+                        <label for="boatrace">Đua thuyền</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú</td>
+                <td>
+                    <textarea name="ghichu" id="note" cols="30" rows="3" placeholder="Buổi học đầu tiên về Html"></textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Đăng ký"/>
+    </form>
+</body>
+</html>
