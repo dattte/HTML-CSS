@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 866px;
+	height: 474px;
+	background-color: #ececec;
+
+	table {
+		background-color: #fff;
+		font-family: Arial;
+		border-collapse: collapse;
+
+		tbody {
+			tr {
+				th, td {
+					padding: 25px;
+					font-size: 20px;
+				}
+				th {
+					font-weight: 900;
+				}
+				td {
+					font-weight: 600;
+				}
+			}
+
+			tr:nth-child(even) {
+				background-color: #f9faff;
+			}
+		}
+	}
+}

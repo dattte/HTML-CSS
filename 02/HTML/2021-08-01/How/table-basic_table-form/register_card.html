@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./register_card.css">
+	<title>Register Card</title>
+</head>
+<body>
+	<div class="container">
+        <div class="form">
+            <div class="form__title">
+                Đăng ký thành viên
+            </div>
+
+            <form>
+                <table>
+                    <tr>
+                        <th>Nội dung</th>
+                        <th>Giá trị</th>
+                    </tr>
+    
+                    <tr>
+                        <td>Họ tên:</td>
+                        <td>
+                            <input type="text" required/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="email" required/>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Mật khẩu:</td>
+                        <td>
+                            <input type="password" required/>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Avatar:</td>
+                        <td>
+                            <input type="file" required/>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Số điện thoại:</td>
+                        <td>
+                            <input type="number" required/>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Tuổi:</td>
+                        <td>
+                            <input type="number" placeholder="1 tuổi" required/>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Giới tính:</td>
+                        <td>
+                            <input type="radio" name="hobbie" checked/> Nam <br />
+                            <input type="radio" name="hobbie" /> Nữ
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Sở thích:</td>
+                        <td>
+                            <input type="checkbox" name="hobbie" checked/> Đá bóng <br />
+                            <input type="checkbox" name="hobbie" checked/> Cầu lông <br />
+                            <input type="checkbox" name="hobbie" checked/> Đua thuyền
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Ghi chú:</td>
+                        <td>
+                            <textarea rows="4">
+                                Buổi học đầu tiên về HTML
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+
+                <button class="form__btn">
+                    Đăng ký
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

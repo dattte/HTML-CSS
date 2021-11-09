@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  width: 500px;
+  height: 700px;
+}
+
+.form .form__title {
+  background-color: green;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.form form {
+  padding-right: 50px;
+}
+
+.form form table {
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form form table tr th,
+.form form table tr td {
+  padding: 10px 0px 10px 10px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.form form .form__btn {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+/*# sourceMappingURL=register_card.css.map */
