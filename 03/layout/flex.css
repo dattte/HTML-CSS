@@ -1,0 +1,48 @@
+.container { 
+  max-width: 1085px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__image {
+  width: 700px;
+  height: 350px;
+  margin: 10px;
+  background-color: #CDCDCD;
+}
+
+.main__content { margin: 10px; }
+
+.main__content,
+.sub__content {
+  max-width: 340px;
+  font-size: 20px;
+}
+
+.sub { 
+  display: flex;
+  justify-content: center;
+}
+
+.sub__item { 
+  width: 100%;
+  margin: 10px;
+}
+
+.sub__image {
+  width: 340px;
+  height: 170px;
+  background-color: #CDCDCD;
+}
+
+.-signed {
+  margin: 0;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #6E6E6E;
+}
