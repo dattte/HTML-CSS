@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="form__avatar">
+            <div class="avatar__content">
+                <h2>
+                    <i class="fas fa-paw"></i>
+                    PUPASSURE
+                </h2>
+            </div>
+            <div class="avatar__image">
+                <img src="./pet.png" alt="anhdongvat">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__register">
+                <h2>Yay,puppies! Ensure your pup gets the best care!</h2>
+                <form action="" method="post">
+                    <div class="input">
+                        <div class="input__name">
+                            <p for="name">Name</p>
+                            <input type="text" name="name" id="name" placeholder="Pet's name">
+                        </div>
+
+                        <div class="input__image">
+                            <label for="image-input">
+                                <i class="fas fa-camera-retro"></i>
+                                Upload a photo
+                            </label>
+                            <input type="file" name="image" id="image-input">
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__breed">
+                            <p for="breed">Breed</p>
+                            <input type="text" name="Breed" id="breed" placeholder="Pet's breed">
+                        </div>
+
+                        <div class="input__birthday">
+                            <p for="birthday">Birthday</p>
+                            <input type="date" name="birthday" id="birthday">
+                        </div>
+                    </div>
+                    
+                    <div class="input">
+                        <div class="input__gender">
+                            <p>Gender</p>
+
+                            <div class="gender -data">
+                                <div class="gender__female">
+                                    <input type="radio" name="gender" id="female" checked>
+                                    <label for="female" class="box">Female</label>
+                                </div>
+                                
+                                <div class="gender__male">
+                                    <input type="radio" name="gender" id="male">
+                                    <label for="male" class="box">Male</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input__neuter">
+                            <p>Spayed or Neutered</p>
+
+                            <div class="neuter -data">
+                                <div class="neuter__spayed">
+                                    <input type="radio" name="neuter" id="spayed" checked>
+                                    <label for="spayed" class="box">Spayed</label>
+                                </div>
+                                
+                                <div class="neuter__neutered">
+                                    <input type="radio" name="neuter" id="neutered">
+                                    <label for="neutered" class="box">Neutered</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__weight">
+                            <p>Weight</p>
+
+                            <div class="weight -data -more">
+                                <div class="weight__type1">
+                                    <input type="radio" name="weight" id="type1" checked>
+                                    <label for="type1" class="box">0-25lbs</label>
+                                </div>
+                                
+                                <div class="weight__type2">
+                                    <input type="radio" name="weight" id="type2" checked>
+                                    <label for="type2" class="box">25-50lbs</label>
+                                </div>
+
+                                <div class="weight__type3">
+                                    <input type="radio" name="weight" id="type3" checked>
+                                    <label for="type3" class="box">50-100lbs</label>
+                                </div>
+
+                                <div class="weight__type4">
+                                    <input type="radio" name="weight" id="type4" checked>
+                                    <label for="type4" class="box">100+ lbs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form__transfer">
+                <input type="button" value="Back">
+                <input type="button" value="Next">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

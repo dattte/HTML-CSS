@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D8A997;
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.form__avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7F7182;
+    width: 40%;
+}
+
+.form__avatar img {
+    width: 155px;
+    height: 166px;
+}
+
+.form__avatar h2 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.form__avatar .fa-paw {
+    padding: 10px;
+    background-color: #FFAFAE;
+    transform: rotate(-25deg);
+    border-radius: 50%;
+}
+
+.form {
+    width: 60%;
+    /* height: 600px; */
+    background-color: #F9C6C2;
+}
+
+.form .form__register {
+    padding: 40px 35px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.fa-camera-retro {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.input__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-input {
+    display: none;
+}
+
+input {
+    width: 155px;
+    height: 35px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ label {
+    background-color: #F6B1AA;
+    border-radius: 5px;
+}
+
+.-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 155px;
+    height: 35px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.-more {
+    width: 100%;
+    min-width: 370px;
+}
+
+.box {
+    padding: 5px;
+    transition: all 250ms ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__transfer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+}
+
+.form__transfer > input {
+    width: 115px;
+    border-radius: 50px;
+    border:1px solid #000000;
+}
+
+[value="Next"] {
+    background-color: #7F7182;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .input { display: block; }
+
+    input { width: 100%; }
+
+    .input > div { margin: 10px; }
+
+    .-data { width: 100%; }
+  }

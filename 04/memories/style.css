@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ablum {
+  width: 100%;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__image {
+  position: relative;
+  padding: 15px;
+}
+
+.card__image img {
+  width: 250px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.card__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.card__name {
+  padding: 15px;
+  text-align: center;
+  font-size: larger;
+}
+
+.-top {
+  top: 150px;
+  right: 450px;
+  z-index: 10;
+  transform: rotate(-3deg);
+}
+
+.-left {
+  top: 350px;
+  right: 550px;
+  z-index: 88;
+  transform: rotate(-7deg);
+}
+
+.-right {
+  top: 250px;
+  right: 350px;
+  z-index: 999;
+  transform: rotate(10deg);
+}
+
+.-bottom {
+  top: 470px;
+  right: 400px;
+  z-index: 1;
+  transform: rotate(-6deg);
+}
+
+.-top .card__image::after {
+  z-index: 11;
+}
+
+.-left .card__image::after {
+  z-index: 89;
+}
+
+.-right .card__image::after {
+  z-index: 9999;
+}
+
+.-bottom .card__image::after {
+  z-index: 2;
+}
